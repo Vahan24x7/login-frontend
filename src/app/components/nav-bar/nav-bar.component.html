@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+   <span><a mat-icon-button routerLink="/">Mutual Funds</a></span>
+   <span class="example-spacer"></span>
+   <a *ngIf="!loggedIn" mat-icon-button routerLink="/login">Login</a>
+   <a *ngIf="loggedIn" (click)="logoutUser()" mat-icon-button mwlConfirmationPopover>Logout</a>
+
+</mat-toolbar>
